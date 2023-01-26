@@ -1,72 +1,119 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
-    height: 100vh;
-    width: 100vw;
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    background: url('./img/mara.jpg') no-repeat;
-    background-size: 100% 100%;
-    overflow: hidden;
-    opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: url('./img/mara.jpg') no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+.bilhos {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.brilhos-1 {
+  position: absolute;
+  display: flex;
+}
+
+.brilhos-2 {
+  position: absolute;
+  right: 600px;
+  display: flex;
+}
+
+#inverter {
+  transform: scaleX(-1);
+}
+
+.brilhos span {
+  width: 30px;
+  margin: 0 4px;
+  animation: animar calc(50s / var(--i)) linear infinite;
+}
+
+@keyframes animar {
+  0% {
+    transform: translateY(50vh) scale(0.7);
+  }
+
+  50% {
+    transform: translateY(-10vh) scale(1);
+  }
+
+  100% {
+    transform: translateY(50vh) scale(0.7);
+  }
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    padding-top: 22%;
-    align-items:center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 22%;
+  align-items: center;
 }
 
 @keyframes fa-blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .titulo {
-    font-size: 20px;
-    color: #d09b51;
-  -webkit-animation: fa-blink .75s linear infinite;
-  -moz-animation: fa-blink .75s linear infinite;
-  -ms-animation: fa-blink .75s linear infinite;
-  -o-animation: fa-blink .75s linear infinite;
-  animation: fa-blink .75s linear infinite;
+  font-size: 20px;
+  color: #d09b51;
+  -webkit-animation: fa-blink 0.75s linear infinite;
+  -moz-animation: fa-blink 0.75s linear infinite;
+  -ms-animation: fa-blink 0.75s linear infinite;
+  -o-animation: fa-blink 0.75s linear infinite;
+  animation: fa-blink 0.75s linear infinite;
 }
 
 .logo {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .logo img {
-	max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .logo:hover img {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .titulo {
-	position: absolute;
-	left: 5%;
-	right: 5%;
-	bottom: 20px;
-	z-index: 10;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: #e79679;
-	text-align: center;
-	font-weight: 950;
-	text-shadow: 0 1px 3px black;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #e79679;
+  text-align: center;
+  font-weight: 950;
+  text-shadow: 0 1px 3px black;
 }
