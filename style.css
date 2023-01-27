@@ -10,123 +10,121 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
-  background: url('./img/mara.jpg') no-repeat;
-  background-size: 100% 100%;
   overflow: hidden;
-  opacity: 0.7;
+  
 }
 
-.logoDc {
-  width: 105px;
-  margin: 0px 10px;
-  animation: animaDc 3s infinite ease;
-}
-
-@keyframes animaDc {
-  0% {
-    opacity: 0;
-    margin-left: 0px;
-  }
-
-  25% {
-    opacity: 0.5;
-    margin-left: 20px;
-  }
-
-  50% {
-    opacity: 1;
-    margin-left: 25px;
-  }
-
-  75% {
-    opacity: 0.5;
-    margin-left: 20px;
-  }
-
-  100% {
-    opacity: 0;
-    margin-left: 0px;
-  }
-}
-
-.bilhos {
-  width: 100vw;
+.imagem {
   height: 100vh;
-  display: flex;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
-.brilhos-1 {
-  position: absolute;
-  display: flex;
+
+.imagem:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.brilhos-2 {
-  position: absolute;
-  right: 600px;
-  display: flex;
+.imagem1 {
+  background: url('./img/2.jpg') no-repeat;
+  background-size: 100% 100%;
 }
 
-#inverter {
-  transform: scaleX(-1);
+.imagem2 {
+  background: url('./img/3.jpg') no-repeat;
+  background-size: 100% 100%;
+  z-index: 999;
 }
 
-.brilhos span {
-  width: 30px;
-  margin: 0 4px;
-  animation: animar calc(50s / var(--i)) linear infinite;
-}
-
-@keyframes animar {
-  0% {
-    transform: translateY(50vh) scale(0.7);
-  }
-
-  50% {
-    transform: translateY(-10vh) scale(1);
-  }
-
-  100% {
-    transform: translateY(50vh) scale(0.7);
-  }
+.imagem3 {
+  background: url('./img/1.jpg') no-repeat;
+  background-size: 100% 100%;
 }
 
 .logo {
   display: flex;
+  padding-top: 30%;
+  height: 100vh;
   flex-direction: column;
-  padding-top: 18%;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 @keyframes fa-blink {
-  0% {
-    opacity: 1;
+  0%{
+    opacity: 0%;
   }
-  50% {
-    opacity: 0.5;
+
+  25%{
+    opacity: 25%;
+    
   }
-  100% {
-    opacity: 0;
+
+  50%{
+    opacity: 50%;
+    
   }
+
+  70%{
+    opacity: 70%;
+    
+  }
+
+  100%{
+    opacity: 100%;
+    
+  }
+
 }
+
+
+
 .titulo {
-  font-size: 30px;
+  font-size: 25px;
   color: #d09b51;
   -webkit-animation: fa-blink 0.75s linear infinite;
   -moz-animation: fa-blink 0.75s linear infinite;
   -ms-animation: fa-blink 0.75s linear infinite;
   -o-animation: fa-blink 0.75s linear infinite;
-  animation: fa-blink 0.75s linear infinite;
+  /* animation: fa-blink 2s linear infinite, 
+   typewriter 5s steps(13) infinite alternate,
+   blink 800ms steps(13) infinite normal; */
+   animation: typewriter 4s steps(13) infinite alternate,
+   blink 800ms steps(13) infinite normal;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid black;
 }
 
-.logo {
-  overflow: hidden;
+@keyframes typewriter {
+  from {
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
 }
+@keyframes blink {
+  from {
+      border-color: black;
+  }
+  to {
+      border-color: transparent;
+  }
+}
+
+
 
 .logo img {
-  max-width: 100%;
+  max-width: 80%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -139,15 +137,23 @@ body {
 }
 
 .titulo {
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  bottom: -10px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  color: #f84b0d;
+  color: #966907;
   text-align: center;
   font-weight: 950;
-  text-shadow: 0 1px 3px black;
+  text-shadow: 0 0 4px #fff, 0 0 4px #ff0;
+ 
 }
+
+a {
+  text-decoration: none;
+}
+
+.image {
+  -webkit-filter:grayscale(100%);
+}
+.image:hover {
+  -webkit-filter:grayscale(0%);
+  transition: 1s;
+}
+
+
