@@ -5,6 +5,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .container {
@@ -15,7 +16,40 @@ body {
   background: url('./img/mara.jpg') no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
-  opacity: 0.6;
+  opacity: 0.7;
+}
+
+.logoDc {
+  width: 105px;
+  margin: 0px 10px;
+  animation: animaDc 3s infinite ease;
+}
+
+@keyframes animaDc {
+  0% {
+    opacity: 0;
+    margin-left: 0px;
+  }
+
+  25% {
+    opacity: 0.5;
+    margin-left: 20px;
+  }
+
+  50% {
+    opacity: 1;
+    margin-left: 25px;
+  }
+
+  75% {
+    opacity: 0.5;
+    margin-left: 20px;
+  }
+
+  100% {
+    opacity: 0;
+    margin-left: 0px;
+  }
 }
 
 .bilhos {
@@ -62,7 +96,7 @@ body {
 .logo {
   display: flex;
   flex-direction: column;
-  padding-top: 22%;
+  padding-top: 18%;
   align-items: center;
 }
 
@@ -78,7 +112,7 @@ body {
   }
 }
 .titulo {
-  font-size: 20px;
+  font-size: 30px;
   color: #d09b51;
   -webkit-animation: fa-blink 0.75s linear infinite;
   -moz-animation: fa-blink 0.75s linear infinite;
@@ -108,11 +142,11 @@ body {
   position: absolute;
   left: 5%;
   right: 5%;
-  bottom: 20px;
+  bottom: -10px;
   z-index: 10;
   padding-top: 20px;
-  padding-bottom: 20px;
-  color: #e79679;
+  padding-bottom: 15px;
+  color: #f84b0d;
   text-align: center;
   font-weight: 950;
   text-shadow: 0 1px 3px black;
