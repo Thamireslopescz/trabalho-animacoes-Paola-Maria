@@ -94,9 +94,7 @@ body {
   -moz-animation: fa-blink 0.75s linear infinite;
   -ms-animation: fa-blink 0.75s linear infinite;
   -o-animation: fa-blink 0.75s linear infinite;
-  /* animation: fa-blink 2s linear infinite, 
-   typewriter 5s steps(13) infinite alternate,
-   blink 800ms steps(13) infinite normal; */
+  background-color: #966907;
    animation: typewriter 4s steps(13) infinite alternate,
    blink 800ms steps(13) infinite normal;
   white-space: nowrap;
@@ -137,10 +135,10 @@ body {
 }
 
 .titulo {
-  color: #966907;
+  color: black;
   text-align: center;
   font-weight: 950;
-  text-shadow: 0 0 4px #fff, 0 0 4px #ff0;
+  /* text-shadow: 0 0 4px #fff, 0 0 4px #ff0; */
  
 }
 
