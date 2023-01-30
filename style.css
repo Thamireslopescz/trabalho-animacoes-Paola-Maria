@@ -58,42 +58,13 @@ body {
   overflow: hidden;
 }
 
-@keyframes fa-blink {
-  0%{
-    opacity: 0%;
-  }
-
-  25%{
-    opacity: 25%;
-    
-  }
-
-  50%{
-    opacity: 50%;
-    
-  }
-
-  70%{
-    opacity: 70%;
-    
-  }
-
-  100%{
-    opacity: 100%;
-    
-  }
-
-}
 
 
 
 .titulo {
   font-size: 25px;
   color: #d09b51;
-  -webkit-animation: fa-blink 0.75s linear infinite;
-  -moz-animation: fa-blink 0.75s linear infinite;
-  -ms-animation: fa-blink 0.75s linear infinite;
-  -o-animation: fa-blink 0.75s linear infinite;
+  
   background-color: #966907;
    animation: typewriter 4s steps(13) infinite alternate,
    blink 800ms steps(13) infinite normal;
@@ -138,7 +109,7 @@ body {
   color: black;
   text-align: center;
   font-weight: 950;
-  /* text-shadow: 0 0 4px #fff, 0 0 4px #ff0; */
+  
  
 }
 
